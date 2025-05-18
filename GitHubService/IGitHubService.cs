@@ -7,7 +7,7 @@ namespace GitHubService
     public interface IGitHubService
     {
         Task<IEnumerable<RepositoryInfo>> GetPortfolioAsync();
-        Task<IEnumerable<Repository>> SearchRepositoriesAsync(string name, string language, string username);
+        Task<IEnumerable<object>> SearchRepositoriesAsync(string name, string language, string username);
     }
 
     public class RepositoryInfo
